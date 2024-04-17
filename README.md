@@ -88,10 +88,10 @@ Before running the application, make sure you have the following installed:
    npm start
  ```
   5.Start frontend  
-    ```sh
-      cd client
-      npm run dev
-    ```
+ ```sh
+  cd client
+  npm run dev
+ ```
 
 
 ## Usage

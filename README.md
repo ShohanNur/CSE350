@@ -101,7 +101,7 @@ The following table lists all the backend endpoints used in Service Xpress for v
 | Category        | Action           | Method   | URI                                                      |
 |-----------------|------------------|----------|----------------------------------------------------------|
 | **Authentication** | Register         | POST     | `localhost:8800/api/auth/register`                       |
-|                 | Login            | POST     | `localhost:8800/api/login`                               |
+|                 | Login            | POST     | `localhost:8800/api/auth/login`                               |
 |                 | Logout           | POST     | `localhost:8800/api/auth/logout`                         |
 | **Service**         | Add Service      | POST     | `localhost:8800/api/gigs`                                |
 |                 | Delete a Service | DELETE   | `localhost:8800/api/gigs/:id`                            |

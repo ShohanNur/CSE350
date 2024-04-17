@@ -89,9 +89,40 @@ Before running the application, make sure you have the following installed:
  ```
   5.Start frontend  
  ```sh
-  cd client
-  npm run dev
+   cd client
+   npm run dev
  ```
+
+
+# API Endpoints
+
+The following table lists all the backend endpoints used in Service Xpress for various functionalities such as authentication, service management, user management, reviews, orders, conversations, and messaging.
+
+| Category        | Action           | Method   | URI                                                      |
+|-----------------|------------------|----------|----------------------------------------------------------|
+| **Authentication** | Register         | POST     | `localhost:8800/api/auth/register`                       |
+|                 | Login            | POST     | `localhost:8800/api/login`                               |
+|                 | Logout           | POST     | `localhost:8800/api/auth/logout`                         |
+| **Service**         | Add Service      | POST     | `localhost:8800/api/gigs`                                |
+|                 | Delete a Service | DELETE   | `localhost:8800/api/gigs/:id`                            |
+|                 | Get a Service    | GET      | `localhost:8800/api/gigs/single/:id`                     |
+|                 | Get all Services | GET      | `localhost:8800/api/gigs`                                |
+| **Users**           | Delete a User    | DELETE   | `localhost:8800/api/users/:id`                           |
+|                 | Get a User       | GET      | `localhost:8800/api/users/:id`                           |
+| **Review**          | Create a Review  | POST     | `localhost:8800/api/reviews`                             |
+|                 | Get Review       | GET      | `localhost:8800/api/reviews/:gigId`                      |
+|                 | Delete a Review  | DELETE   | `localhost:8800/api/reviews/:id`                         |
+| **Order**           | Get Orders       | GET      | `localhost:8800/api/orders`                              |
+|                 | Create Orders    | POST     | `localhost:8800/api/orders/:gigId`                       |
+|                 | Payment          | POST     | `localhost:8800/api/orders/create-payment-intent/:id`    |
+|                 | Confirm Payment  | PUT      | `localhost:8800/api/orders/`                             |
+| **Conversation**    | Get Conversations| GET      | `localhost:8800/api/conversations/`                      |
+|                 | Create Conversation| POST    | `localhost:8800/api/conversations/`                       |
+|                 | Get a Single Conversation | GET| `localhost:8800/api/conversations/single/:id`            |
+|                 | Update Conversation| PUT     | `localhost:8800/api/conversations/:id`                    |
+| **Message**         | Create Message   | POST     | `localhost:8800/api/messages/`                           |
+|                 | Get Message       | GET      | `localhost:8800/api/messages/:id`                        |
+
 
 
 ## Usage

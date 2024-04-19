@@ -92,6 +92,12 @@ Before running the application, make sure you have the following installed:
    cd client
    npm run dev
  ```
+If it is not working then use:
+```sh
+  cd client 
+  npm install --force
+  npm install --legacy-peer-deps
+```
 
 
 # API Endpoints
